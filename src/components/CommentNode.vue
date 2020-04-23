@@ -69,10 +69,9 @@
             itemprop="datePublished"
             :datetime="comment.createTime"
           >{{ createTimeAgo }}</time>
-          <a
-            class="comment-id"
-            :href="'#comment-'+comment.id"
-          >#{{ comment.id }}</a>
+        </div>
+        <div>
+          <a class="comment-id" :href="'#comment-'+comment.id">#{{ comment.id }}</a>
         </div>
         <div
           class="comment-content markdown-body"
@@ -168,7 +167,7 @@ export default {
         at =
           '<a href="#comment-' +
           this.comment.parentId +
-          '">#' +
+          '">@' +
           this.comment.parentId +
           "</a>";
       }

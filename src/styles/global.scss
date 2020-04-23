@@ -242,14 +242,8 @@
             transition: all 0.3s ease 0s;
 
             &:hover {
-                color: #404040;
-                font-weight: 700;
-                letter-spacing: 3px;
-                background: none;
-                -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-                -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-                box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-                transition: all 0.3s ease 0s;
+                background-color: #1a1d23;
+                border-color: #1a1d23;
             }
         }
     }
@@ -759,5 +753,91 @@
             display: inline-block;
             vertical-align: middle;
         }
+    }
+}
+
+.dark-mode {
+    ::selection {
+        background: rgba(33, 36, 43, 0.8);
+        color: #fff;
+    }
+
+    ::-moz-selection {
+        background: rgba(33, 36, 43, 0.8);
+        color: #fff;
+    }
+
+    input, textarea {
+        background-color: #2e313a !important;
+        color: #a9a9b3 !important;
+        border: none !important;
+        border: 1px solid #2e313a !important;
+    }
+
+    .comment-buttons {
+        .button-submit {
+            background-color: #21242b !important;
+            border-color: #21242b !important;
+
+            &:hover {
+                background-color: #1a1d23 !important;
+                border-color: #1a1d23 !important;
+            }
+        }
+    }
+
+    .comment-reply {
+        background-color: #21242b !important;
+        border-color: #21242b !important;
+    }
+
+    img {
+        filter: brightness(0.6) !important;
+    }
+
+    .comment-author .author-name {
+        color: #FEFFFD !important;
+    }
+
+    .comment-time {
+        color: #969aa7 !important;
+    }
+
+    .markdown-body a, .comment-id {
+        color: #FEFFFD !important;
+    }
+
+    .comment-content {
+        color: #969aa7 !important;
+        border: none !important;
+    }
+
+    .comment-preview {
+        background-color: #232125 !important;
+        color: #a9a9b3 !important;
+        border: none !important;
+    }
+
+    .comment-nodes .index-1 {
+        border-bottom: 1px solid #343642;
+    }
+
+    .comment-page {
+        border-top: 3px solid #36393c;
+    }
+
+    .comment-page .page button {
+        background-color: #676a6c;
+        color: #fff;
+        border: 1px solid #676a6c;
+    }
+
+    .alert.info {
+        background-color: #2e313a !important;
+        box-shadow: 0 0 30px rgba(141, 141, 145, 0.2) !important;
+    }
+
+    .alert .closebtn:hover {
+        color: #fff !important;
     }
 }

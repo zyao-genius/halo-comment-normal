@@ -44,10 +44,10 @@
       </template>
     </ol>
 
-    <div
+    <!--<div
       v-if="loaded && !commentLoading && comments.length<=0"
       class="comment-empty"
-    >暂无评论</div>
+    >暂无评论</div>-->
 
     <div
       v-if="pagination.pages>1"

@@ -65,7 +65,7 @@
           />
         </div>
         <ul class="comment-buttons">
-          <li
+          <!--<li
             v-if="comment.content"
             class="middle"
             style="margin-right:5px"
@@ -76,7 +76,7 @@
               rel="nofollow noopener"
               @click="handlePreviewContent"
             >{{previewMode?'编辑':'预览'}}</a>
-          </li>
+          </li>-->
           <!-- <li
             class="middle"
             style="margin-right:5px"
@@ -98,7 +98,7 @@
               tabindex="5"
               rel="nofollow noopener"
               @click="handleSubmitClick"
-            >提交</a>
+            >发布评论</a>
           </li>
         </ul>
         <div class="comment-alert">
